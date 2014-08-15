@@ -1,10 +1,22 @@
+$red: #eb1515;
+
 * {
 	margin: 0;
 	padding: 0;
 }
 
+a {
+	color: $red;
+	font-weight: 400;
+
+	&:hover {
+		color: darken($red, 20%);
+	}
+}
+
 body {
-	background: #eb1515 url(images/bill.png) no-repeat center top;
+	background: $red url(images/bill.png) no-repeat center top;
+	background: $red url(images/geometry.png);
 	color: #333;
 	font-family: 'Roboto';
 	font-size: 20px;
@@ -36,6 +48,7 @@ footer {
 h1 {
 	color: #fff;
 	font-size: 34px;
+	margin-bottom: 25px;
 	text-align: center;
 }
 
@@ -54,6 +67,7 @@ section, footer {
 }
 
 .bg-red {
+	background: url(images/bill.png) no-repeat top center;
 	padding-top: 140px;
 
 	h2, p { color: #fff; }
@@ -67,6 +81,46 @@ section, footer {
 
 .bg-white {
 	background: #fff;
+}
+
+.button {
+	background: #f8f8f8;
+	box-shadow: 0 5px 0 rgba(0,0,0,.3);
+	color: $red;
+	display: block;
+	font-size: 34px;
+	font-weight: 100;
+	line-height: .8;
+	padding: 20px;
+	text-align: center;
+	text-decoration: none;
+
+	span {
+		font-size: 16px;
+		font-weight: 500;
+	}
+
+	&:hover {
+		background: #ddd;
+		color: $red;
+	}
+}
+
+.button-dark {
+	background: $red;
+	color: #fff;
+	margin: 60px 100px 0 100px;
+
+	&:hover {
+		background: darken($red, 20%);
+		color: #fff;
+	}
+}
+
+.card {
+	display: block;
+	margin: 0 auto 20px auto;
+	width: 280px;
 }
 
 .clearfix {
@@ -84,8 +138,38 @@ section, footer {
 	margin: 60px 100px 0 100px;
 
 	strong {
-		color: red;
+		color: $red;
 	}
+
+	p strong {
+		color: #333;
+	}
+}
+
+.registered:after {
+	content: '®';
+	font-size: 12px;
+	vertical-align: super;
+}
+
+.santander {
+	background: url(images/santander.gif) no-repeat;
+	bottom: 20px;
+	position: fixed;
+	height: 77px;
+	right: -2px;
+	width: 192px;
+}
+
+.service:after {
+	content: '℠';
+}
+
+.smalltext {
+	font-size: 16px;
+	font-weight: 500;
+	margin-top: 20px;
+	text-align: center;
 }
 
 .step {
@@ -104,4 +188,92 @@ section, footer {
 .wrap {
 	margin: 0 auto;
 	width: 960px;
+}
+
+.form {
+
+	.bg-red {
+		padding-top: 190px;
+	}
+
+	.bg-red p {
+		width: 600px;
+	}
+
+	.bg-white .left-column {
+		float: left;
+		margin-right: 60px;
+		width: 300px;
+	}
+
+	.bg-white .right-column {
+		float: left;
+		width: 600px;
+	}
+
+	.instructions {
+		margin-bottom: 40px;
+	}
+
+	form p {
+		font-size: 15px;
+		font-weight: 300;
+	}
+
+	label {
+		display: block;
+		font-size: 12px;
+		font-weight: 600;
+		margin-top: 5px;
+		text-transform: uppercase;
+	}
+
+	input[type='text'], input[type='email'], select {
+		box-sizing: border-box;
+		font-size: 20px;
+		margin-bottom: 25px;
+		padding: 10px;
+		width: 100%;
+	}
+
+	input[type='checkbox'] {
+		margin-bottom: 25px;
+	}
+
+	form .button {
+		background: $red;
+		border: none;
+		box-shadow: 0 3px 0 rgba(0,0,0,.2);
+		color: #fff;
+		cursor: pointer;
+		font-size: 12px;
+		font-weight: 600;
+		padding: 15px 30px;
+		text-transform: uppercase;
+
+		&:hover {
+			background: darken($red, 20%);
+		}
+	}
+
+	#next {
+		display: inline-block;
+	}
+
+	.page2 {
+		display: none;
+	}
+
+	.parsley-error {
+		border: 1px solid $red;
+		margin-bottom: 3px !important;
+	}
+
+	.parsley-errors-list {
+		color: $red;
+		font-size: 13px;
+		list-style: none;
+		margin-bottom: 25px;
+	}
+
 }
