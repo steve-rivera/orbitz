@@ -1,7 +1,7 @@
 adapter: ftp
 host: ftp.highstartgroup.com
-username: gemini@highstartgroup.com
-password: hsg123
+username: orbitz@highstartgroup.com
+password: orbitz123
 path: /
 passive: true
 
@@ -11,7 +11,4 @@ exclude:
     - .gitignore
     - dandelion.yml
     - index.html.haml
-    - form.html.haml
-    - form2.html.haml
-    - thanks.html.haml
     - style.css.scss
