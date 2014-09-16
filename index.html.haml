@@ -6,41 +6,41 @@
     %title Orbitz
     %meta{name: 'robots', content: 'noindex' }
     %link{ rel: 'stylesheet', type: 'text/css', href: 'style.css' }
-    %link{ rel: 'stylesheet', type: 'text/css', href: 'http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900' }
+    %link{ rel: 'stylesheet', type: 'text/css', href: 'http://fonts.googleapis.com/css?family=Quicksand|Raleway:800' }
     %script{ src: "//cdn.optimizely.com/js/793782030.js" }
 
   %body
 
     %header
-      %img{ src: 'images/orbitz.png' }
+      
+      .wrap
+      
+        %img.orbitz{ src: 'images/orbitz.png' }
+        %img.hsg{ src: 'images/hsg.png' }
 
-    %div.video
+    %section.bg-clouds
+      
+      .wrap
+      
+        %h1 A New Flight Plan for Orbitz
 
-    .text
-      Lorem ipsum
+        %div.video
+          %iframe{ width: "600", height: "358", src: "//www.youtube.com/embed/QsXisjguO9Q", frameborder: "0" }
 
-    .download
-      Download More
+    %section.bg-white
+      
+      .wrap
+
+        %a.download{ href: 'images/deck.pdf' } Download the "New Flight Plan for Orbitz" Deck Here
 
     %footer
 
       .wrap
 
-        .left-column#fineprint
-          %p
-            %img{ src: 'images/housing.png', width: 20 } 
-            Equal Housing Lender. Santander Bank, N.A. is a Member FDIC and a wholly owned subsidiary of Banco Santander, S.A. &copy; 2014 Santander Bank, N.A. All rights reserved. Santander, Santander Bank , the Flame Logo and Extra 20 (in connection with checking account services) are registered trademarks, and A Bank For Your Ideas, Extra 20 and Extra 20 (and Design) in connection with Savings and Credit Card Services) are service marks of Banco Santander, S.A. or its affiliates or subsidiaries in the United States or in other countries.
-          %p
-            &copy; 2014 Santander Bank, N.A.
-            %br
-            %a{ href: 'http://www.santander.com/' } Learn More About Santander Bank
-
         .right-column#hsgcontact
           %img{ src: 'images/hsg.png' }
           %br
           617-249-0531
-          %br
-          preorders@highstartgroup.com
           %br
           %a{ href: 'http://www.highstartgroup.com' }Learn More About High Start Group
 
